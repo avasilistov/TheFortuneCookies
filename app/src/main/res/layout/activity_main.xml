@@ -6,54 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".CreatePrediction">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:hint="@string/your_name_here"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInstruction" />
-
     <TextView
         android:id="@+id/textViewInstruction"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:layout_marginTop="68dp"
         android:gravity="center"
         android:text="@string/enter_your_name_and_your_age"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonGetPrediction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="getPrediction"
+        android:text="@string/get_prediction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/your_name_here"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstruction" />
 
     <EditText
         android:id="@+id/editTextAge"
         android:layout_width="166dp"
         android:layout_height="48dp"
         android:layout_margin="8dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/your_age_here"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    <Button
-        android:id="@+id/buttonGetPrediction"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="getPrediction"
-        android:layout_margin="8dp"
-        android:text="@string/get_prediction"
+        android:layout_weight="1"
+        android:contentDescription="@string/cookie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qwert" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

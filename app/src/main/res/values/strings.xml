@@ -5,6 +5,7 @@
     <string name="enter_your_name_and_your_age">Enter your name and your age</string>
     <string name="your_age_here">Your Age here</string>
     <string name="get_prediction">Eat Fortune Cookie!</string>
+    <string name="cookie">cookie</string>
     <string-array name="description_of_prediction">
         <item>some one is looking up to you. Don\'t let that person down.</item>
         <item>run!</item>
