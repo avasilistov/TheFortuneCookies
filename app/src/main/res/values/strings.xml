@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">The Fortune Cookies</string>
+    <string name="name">Name</string>
+    <string name="your_name_here">Your Name here</string>
+    <string name="enter_your_name_and_your_age">Enter your name and your age</string>
+    <string name="your_age_here">Your Age here</string>
+    <string name="get_prediction">Eat Fortune Cookie!</string>
+    <string-array name="description_of_prediction">
+        <item>some one is looking up to you. Don\'t let that person down.</item>
+        <item>run!</item>
+        <item>never do anything halflway.</item>
+        <item>about time you got out of that cookie.</item>
+        <item>don\'t be afraid to take that big step.</item>
+        <item>I cannot help you, for I am just a cookie.</item>
+        <item>you don\'t have to be faster than the bear, you just have to be faster than the slowest guy running from it.</item>
+        <item>you look pretty.</item>
+        <item>ask not what your fortune cookie can do for you but what you can do for your fortune cookie.</item>
+        <item>enjoy yourself while you can.</item>
+    </string-array>
+</resources>
